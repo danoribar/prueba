@@ -4,7 +4,7 @@ from PIL import Image
 import numpy as np
 import os
 
-print("Current Working Directory:", os.getcwd())
+print("Current Working Directory:",os.listdir(os.getcwd()))
 model = tf.keras.models.load_model("./mount/src/prueba/cnn_model.h5")
 label_map = {0:"cat",1:"Dog"}
 
