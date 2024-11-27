@@ -5,7 +5,7 @@ import numpy as np
 import os
 
 print("Current Working Directory:",os.listdir(os.getcwd()))
-model = tf.keras.models.load_model("./mount/src/prueba/cnn_model.h5")
+model = tf.keras.models.load_model("danoribar/prueba/main/cnn_model.h5")
 label_map = {0:"cat",1:"Dog"}
 
 def preprocess_iamge(image):
