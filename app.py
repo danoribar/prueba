@@ -3,7 +3,7 @@ import tensorflow as tf
 from PIL import Image
 import numpy as np
 
-model = tf.keras.models.load_model("./cnn_model.h5")
+model = tf.keras.models.load_model("/mount/src/prueba/cnn_model.h5")
 label_map = {0:"cat",1:"Dog"}
 
 def preprocess_iamge(image):
